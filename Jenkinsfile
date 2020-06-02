@@ -1,14 +1,14 @@
 pipeline {
   environment {
     DOCKER_TAG = getDockerTag()
-    registry = "ernesen/frontend"
+    registry = "elumban/frontend"
     registryCredential = 'DockerCredentials'
     dockerImage = ''
     
   }
   
   agent {
-    docker { image 'ernesen/migratecf:3.0' }
+    docker { image 'elumban/migratecf:1.0' }
   }
 
   stages {

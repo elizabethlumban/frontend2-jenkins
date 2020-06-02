@@ -4,7 +4,7 @@ pipeline {
     registry = "ernesen/frontend"
     registryCredential = 'DockerCredentials'
     dockerImage = ''
-    BUILD_NUMBER = $BUILD_NUMBER+".0"
+    
   }
   
   agent {
